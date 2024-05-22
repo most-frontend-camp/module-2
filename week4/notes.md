@@ -23,3 +23,14 @@ console.log(admin);
 let ourPlanet = 'Earth';
 let currentUserName = 'Caesar';
 ```
+
+### Example 3
+Что выведет этот скрипт?
+```javascript
+let name = "Ilya";
+console.log( `hello ${1}` ); // ?
+console.log( `hello ${"name"}` ); // ?
+console.log( `hello ${name}` ); // ?
+```
+
+
