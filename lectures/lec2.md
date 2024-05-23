@@ -1,6 +1,6 @@
 # Lecture2
 
-## Arrays
+## Arrays, Loops, Objects
 
 ```javascript
 let array1 = [1, 2, 3, 4, 5, 6];
@@ -107,7 +107,7 @@ console.log(array);
 
 ### Arrays advanced or Objects
 
-Объекты для хранения коллекций значений в отличи от использования вложенных массивов.
+Объекты для хранения коллекций значений в отличии от использования вложенных массивов.
 ```javascript
 let books = [
 'b1', 'Abay Zholy', 'Mukhtar Auezov', 4, 16893,

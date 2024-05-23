@@ -6,5 +6,5 @@
 3. [ ] Logical operators
 4. [] Arrays
 5. [] Loops
-6. [] Arrays advanced aka Objects
-Functions with and without parameters
+6. [] Arrays advanced aka Objects 
+7. [] Functions with and without parameters
