@@ -1,10 +1,16 @@
-let person = {
-    name: "Bruce",
-    age: 32,
-    isAdmin: true
-};
+function display_scopes() {
+    // declare variable in local scope
+    let message = "local";
 
-for(let key in person) {
-    console.log(key);
-    console.log(person[key]);
+    if (true) {
+
+        // declare block-level variable
+        let message = "block-level";
+
+        console.log(`inner scope: ${message}`);
+    }
+
+    console.log(`outer scope: ${message}`);
 }
+
+display_scopes();
