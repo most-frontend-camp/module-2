@@ -118,4 +118,49 @@ let y = "2";
 console.log(x+y);
 ```
 
+### Logical data types - Boolean
 
+У него всего два значения: `true` (истина) и `false` (ложь).
+
+Для сравнения используется два символа равенства `'='`. 
+в JavaScript – знак равенства с восклицательным знаком перед ним `!=`.
+```javascript
+console.log(18 > 0);
+console.log(18 < 0);
+
+let checked  = true;
+checked = false;
+console.log(checked);
+
+let a =10;
+let b =10;
+let c = 20;
+
+console.log(a == b);
+console.log(a != b);
+console.log(a == c);
+console.log(b != c);
+```
+Один символ a = b означал бы присваивание.
+
+### Logical operators AND OR NOT
+```javascript
+let hour = 20;
+let minute = 45;
+
+if (hour === 20 || minute === 45) {
+console.log("Good bye baby!");
+}
+
+let openingHour = 8;
+let closingHour= 22;
+
+if (openingHour < 8 || closingHour > 21) {
+console.log("The shop is closed");
+}
+
+let city = false;
+
+if(!city) {
+console.log("I am from almaty");
+}```

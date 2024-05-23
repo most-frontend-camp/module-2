@@ -1,4 +1,5 @@
-let x = "1";
-let y = "2";
+let arr = ['you', 'will', 'never', 'walk', 'alone'];
 
-console.log(x+y);
+arr.join(' ');
+console.log(arr);
+console.log('football,club,barcelona'.split(' '));
