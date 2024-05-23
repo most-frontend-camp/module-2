@@ -12,8 +12,3 @@
 
 ##  Additional modules:
 DOM introduction
-Unit testing
-How to google
-Internet
-IDE basic
-Git basic

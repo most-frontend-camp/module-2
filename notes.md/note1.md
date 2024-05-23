@@ -1,4 +1,5 @@
-# Javascript core
+# Module 2
+## Lesson 1: 1. Introduction to JS part1: variables, primitives and objects
 
 ### Strings
 Строки создаются при помощи двойных или одинарных кавычек (также есть ES6 template string).

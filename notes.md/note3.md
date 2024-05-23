@@ -1,5 +1,5 @@
 # Module 2 
-## Lesson 2: Arrays
+## Lesson 3: Arrays
 
 ## Definition
 
