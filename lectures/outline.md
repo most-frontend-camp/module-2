@@ -4,7 +4,7 @@
 1. [ ] Variables, data types
 2. [ ] Strings
 3. [ ] Logical operators
-Arrays
-Loops
-Arrays advanced
-Functions with and without parameter
+4. [] Arrays
+5. [] Loops
+6. [] Arrays advanced aka Objects
+Functions with and without parameters

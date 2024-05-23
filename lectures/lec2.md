@@ -2,7 +2,6 @@
 
 ## Arrays
 
-
 ```javascript
 let array1 = [1, 2, 3, 4, 5, 6];
 let array2 = [1, 2, 3, 'four', false, true];
@@ -47,4 +46,111 @@ console.log(arr);
 // arr.shift();
 arr.unshift(111);
 console.log(arr);
+```
+### `Splice`
+let array =['abc', 'def', 'xyz'];
+console.log(array);
+
+array.splice(1,1);
+console.log(array);
+
+## Loops
+
+1. for
+2. while
+
+iteration
+
+как выглядит цикл while?
+```javascript
+let i  = 0;
+
+while (i < 5) {
+    console.log(i);
+    i++;
+    // i = i + 1
+    // it is called an increment
+}
+```
+
+как выглядит цикл for?
+
+```javascript
+for (начало; условие; шаг) {
+// ... тело цикла ...
+}
+```
+Example
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+```
+
+## Loops in arrays
+
+```javascript
+let teamsUCL = ['Real', 'Borussia', 'City', 'PSG'];
+for (let i = 0; i < teamsUCL.length; i++) {
+    console.log(teamsUCL[i]);
+}
+```
+
+
+```javascript
+let array = [];
+for (let i = 1; i <= 4; i++) {
+    array.push(i);
+}
+console.log(array);
+```
+
+### Arrays advanced or Objects
+
+Объекты для хранения коллекций значений в отличи от использования вложенных массивов.
+```javascript
+let books = [
+'b1', 'Abay Zholy', 'Mukhtar Auezov', 4, 16893,
+'b2', 'Моя жизнь', 'Джон Зойберг', 2, 8992,
+];
+
+for (let i = 1; i < books.length; i++) {
+console.log('ID: ', books[i]);
+console.log(books[i+1]);
+console.log('Price: ', books[i+3]);
+}
+
+let bookIDs= ['b1', 'b2'];
+let bookAuthors= ['Mukhtar Auezov', 'Джон Зойберг'];
+let bookTitles= ['Abay Zholy', 'Моя жизнь'];
+```
+
+key-value
+`
+let user = new Object();
+let user = {};
+`
+
+let person = {
+name: "Bruce",
+age: 32,
+};
+
+console.log(person['age']);
+console.log(person['name']);
+console.log(person.friends);
+// в случае обращения к несуществующим полям JS возвращает нам undefined
+
+Для перебора всех свойств объекта используется цикл for..in. Этот цикл отличается от изученного ранее цикла for(;;).
+```javascript
+let person = {
+name: "Bruce",
+age: 32,
+isAdmin: true
+};
+
+for(let key in person) {
+console.log(key);
+console.log(person[key]);
+}
 ```
