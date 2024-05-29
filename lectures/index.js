@@ -1,16 +1,3 @@
-function display_scopes() {
-    // declare variable in local scope
-    let message = "local";
-
-    if (true) {
-
-        // declare block-level variable
-        let message = "block-level";
-
-        console.log(`inner scope: ${message}`);
-    }
-
-    console.log(`outer scope: ${message}`);
+for (let i = 0; i <10; i++) {
+    console.log(i);
 }
-
-display_scopes();

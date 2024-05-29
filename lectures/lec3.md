@@ -16,15 +16,36 @@ showMessage();
 ```javascript
 function showMessage(name) {
     console.log("Hello " + name);
+    // console.log(`Salem ${name}`); Alternative way to interpolate strings
 }
 
 showMessage("Caesar");
 // Hello Caesar
 ```
 
+```javascript
+function sum(a, b) {
+    return a + b;
+}
+
+let result = sum(222, 3123213);
+console.log(result);
+// 3123435
+function isPrime(n){
+    for (let i = 2; i < n; i++) {
+        if(n % i == 0) return "entered number is not prime";
+    }
+    return "number is not prime";
+}
+console.log(isPrime(3));
+console.log(isPrime(33));
+console.log(isPrime(17));
+```
+
+
 ### Области видимости:
 У переменной есть область видимости. Это тот код, который видит переменную и может получить к ней доступ.
-Определяется блоком кода вокруг объявления переменной переменной. 
+Определяется блоком кода вокруг объявления переменной. 
 Блоки кода обозначаются фигурными скобками.
 
 ```javascript
@@ -67,21 +88,35 @@ console.log(message);
 ОБЛАСТЬ ВИДИМОСТИ — КОД КОТОРЫЙ ИМЕЕТ ДОСТУП ДО ПЕРЕМЕННОЙ.
 
 ```javascript
+let age = 25;
+
+function birthday(){
+    let age = 23;
+    console.log(age);
+}
+
+birthday();
+birthday();
+birthday();
+```
+
+```javascript
 // Глобальная область
 
 function foo1(){
-    // Локальная область 1
+// Локальная область 1
 function foo2(){
-    // Локальная область 2
+// Локальная область 2
 }
 }
 
 // Глобальная область
 function foo3(){
-    // Локальная область 3
+// Локальная область 3
 }
 
     // Глобальная область
+
 ```
 
 В JavaScript есть только одна глобальная область. 
