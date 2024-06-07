@@ -28,6 +28,40 @@ console.log( 'Привет\nstring!' );
 4. substring(start, end)
 5. includes(substr)
 
+### Naming conventions
+
+
+```
+
+// camelCase
+
+let firstName = 'Clark';
+
+// PascalCase
+
+let FirstName = 'Superman';
+
+// UPPER_SNAKE_CASE
+
+const COUNTRY_CODE = '01010010';
+
+// snake_case
+
+const id_name = 'toyota';
+
+```
+
+// kebab-case
+
+```javascript
+const hero = {
+    name: 'Bruce',
+    nick: 'Batman',
+    surname: 'Wayne',
+    wealth: 1_000_000_000,
+    background_color: 'red'
+}
+```
 
 ### Syntax Errors
 В JS существует четыре основных типа ошибок:
@@ -37,8 +71,6 @@ console.log( 'Привет\nstring!' );
 4. Logical error .
 
 ### Управляющие конструкции
-
-
 
 ```javascript
 let age = 18;
