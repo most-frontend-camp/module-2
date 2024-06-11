@@ -48,12 +48,13 @@ arr.unshift(111);
 console.log(arr);
 ```
 ### `Splice`
+```javascript
 let array =['abc', 'def', 'xyz'];
 console.log(array);
 
 array.splice(1,1);
 console.log(array);
-
+```
 ## Loops
 
 1. for
