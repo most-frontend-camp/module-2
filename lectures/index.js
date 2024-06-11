@@ -1,17 +1,16 @@
-const fruits = ['apple', 'banana'];
-const vegetables = ['potato', 'tomato'];
-/*
-const allBasket = fruits + vegetables;
-console.log(allBasket);
-const allBasketConcat = fruits.concat(vegetables);
-console.log(allBasketConcat);
-*/
-const spreadBasket = [...fruits, ...vegetables];
-console.log(spreadBasket);
+// for Each
+const fruits = ['apple', 'banana', 'orange', 'pine', 'pineapple'];
 
-const PotatoFruits = ['potato',...fruits];
-console.log(PotatoFruits);
+// some
+const hasFruitWithP = fruits.some(fruit => fruit[0] === 'p');
+const hasFruitWithC = fruits.some(fruit => fruit[0] === 'c');
+console.log(hasFruitWithP);
+console.log(hasFruitWithC);
 
-const fruitsBerries = [...fruits,'blueberry'];
-console.log(fruitsBerries);
-console.log(fruits);
+// every
+const pruits = ['papple', 'panana', 'pange', 'pine', 'pineapple'];
+
+const hasPruitWithP = pruits.every((pruit) => pruit[0] === 'p');
+console.log(hasPruitWithP);
+// const hasFruitWithP = pruits.some(pruit => pruit[0] === 'p');
+

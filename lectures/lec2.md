@@ -175,6 +175,29 @@ console.log(PotatoFruits);
 const fruitsBerries = [...fruits,'blueberry'];
 console.log(fruitsBerries);
 console.log(fruits);
+
+// for Each
+const fruits = ['apple', 'banana', 'orange'];
+
+fruits.forEach(fruit => {
+    // console.log(fruit);
+})
+
+fruits.forEach((fruit, index) => {
+    // console.log(`${index}: ${fruit}`);
+})
+
+
+const numbers = [1,2,3,4,5];
+
+numbers.forEach((num) => {
+    const cubes = num * num * num;
+    console.log(`${cubes}`);
+})
+
+const team = {};
+
+console.log(team.forEach);
 ```
 
 ### Arrays advanced or Objects
