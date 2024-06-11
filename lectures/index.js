@@ -1,11 +1,17 @@
-// перебор элементов
+const fruits = ['apple', 'banana'];
+const vegetables = ['potato', 'tomato'];
+/*
+const allBasket = fruits + vegetables;
+console.log(allBasket);
+const allBasketConcat = fruits.concat(vegetables);
+console.log(allBasketConcat);
+*/
+const spreadBasket = [...fruits, ...vegetables];
+console.log(spreadBasket);
 
-const player = {
-    name: 'Harry',
-    age: 31,
-    teams: ['Bavaria', 'Tottenham'],
-};
+const PotatoFruits = ['potato',...fruits];
+console.log(PotatoFruits);
 
-for (let key in player) {
-    console.log(player[key]);
-}
+const fruitsBerries = [...fruits,'blueberry'];
+console.log(fruitsBerries);
+console.log(fruits);

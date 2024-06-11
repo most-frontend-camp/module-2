@@ -106,6 +106,77 @@ for (let i = 1; i <= 4; i++) {
 console.log(array);
 ```
 
+### Array another methods
+
+Other methods:
+1. splice - добавляет и удаляет элементы из массива в произвольном месте - `start`, `deleteCount`, `item1`, `item2`
+2. slice - вырезает часть массива и возрв-т новый массив с этими элементами
+
+```javascript
+const fruits = ['apple', 'banana', 'orange', 'pear', 'pineapple'];
+
+const removed = fruits.splice(
+1, // начинать с индекса банан
+2 // удалять элементы banana, orange
+);
+
+console.log(removed);
+console.log(fruits);
+
+fruits.splice(
+2, // начинать с индекса 2 где есть pineapple
+0, // ничего не удаляем
+'kiwi', 'selderey' // вставляем 2 элемента - киви, сельдерей
+);
+
+console.log(fruits);
+```
+
+### slice
+
+```javascript
+const fruits = ['apple', 'pear', 'orange', 'banana', 'pineapple'];
+console.log(fruits);
+
+const firstTwo = fruits.slice(
+0, // start, индекс с которого мы режем элементы
+2 // end, на котором заканчивается вырезание элементов
+);
+console.log(firstTwo);
+
+const citrus = fruits.slice(2,3);
+console.log(citrus);
+
+const tropical = fruits.slice(2);
+console.log(tropical);
+
+```
+
+* splice, slice - похожи
+* splice changes current array
+* slice return new array without changing beginning array
+### `Concat`, `...spread` operator
+
+```javascript
+const fruits = ['apple', 'banana'];
+const vegetables = ['potato', 'tomato'];
+/*
+const allBasket = fruits + vegetables;
+console.log(allBasket);
+const allBasketConcat = fruits.concat(vegetables);
+console.log(allBasketConcat);
+*/
+const spreadBasket = [...fruits, ...vegetables];
+console.log(spreadBasket);
+
+const PotatoFruits = ['potato',...fruits];
+console.log(PotatoFruits);
+
+const fruitsBerries = [...fruits,'blueberry'];
+console.log(fruitsBerries);
+console.log(fruits);
+```
+
 ### Arrays advanced or Objects
 
 Объекты для хранения коллекций значений в отличии от использования вложенных массивов.
