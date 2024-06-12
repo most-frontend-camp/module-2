@@ -202,7 +202,7 @@ console.log(team.forEach);
 
 ### Arrays advanced or Objects
 
-Объекты для хранения коллекций значений в отличии от использования вложенных массивов.
+Объекты для хранения коллекций значений в отличие от использования вложенных массивов.
 ```javascript
 let books = [
 'b1', 'Abay Zholy', 'Mukhtar Auezov', 4, 16893,
@@ -221,11 +221,12 @@ let bookTitles= ['Abay Zholy', 'Моя жизнь'];
 ```
 
 key-value
-`
+```javascript
 let user = new Object();
 let user = {};
-`
+```
 
+```javascript
 let person = {
 name: "Bruce",
 age: 32,
@@ -234,6 +235,7 @@ age: 32,
 console.log(person['age']);
 console.log(person['name']);
 console.log(person.friends);
+```
 // в случае обращения к несуществующим полям JS возвращает нам undefined
 
 Для перебора всех свойств объекта используется цикл for..in. Этот цикл отличается от изученного ранее цикла for(;;).
