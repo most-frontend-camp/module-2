@@ -45,5 +45,3 @@ const season =
                 : 'Fall';
 
 console.log(season);
-
-s
