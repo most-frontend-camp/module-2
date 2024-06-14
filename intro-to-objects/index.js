@@ -1,18 +1,51 @@
-const player ={
-    name: 'Erling', // name - key / ключ, value - Erling
-    age: 23, // age - key, value - 23
-    hobbies: ['reading', 'dancing'],
+const obj = {};
+obj.number = 477;
+// console.log(obj);
 
-    sayHello: function () {
-        console.log('Hello World! ' + this.name);
-    },
+obj[''] = 'empty';
+// console.log(obj);
+obj['1'] = 'one';
+obj['salem alem'] = 'greeting';
+// console.log(obj);
+
+
+// получить доступ к свойствам объекта с индексами и здесь мы применяем квадратные скобки
+/*console.log(obj['']);
+console.log(obj['1']);
+console.log(obj['salem alem']);*/
+
+
+// in - помогает определить существует ли свойство в объекте
+const person ={
+    name: 'Arman',
+    age: 30,
+    isHappy: true,
+    city: 'Almaty',
 };
 
-console.log(player.name);
-console.log(player["age"]);
-console.log(player.hobbies[0]);
-// console.log(player.sayHello());
+// console.log('name' in person);
+// console.log('age' in person);
+// console.log('height' in person);
 
-player.height = 190;
-console.log(player.hobbies[1]);
-player.age = 30;
+for (let key in person) {
+    // console.log(key + ': ' + person[key]);
+}
+
+// for in - применяем когда хотим перебрать свойства объекта
+
+
+// свойства не имеют порядка
+// digit numbered indexes, then the way objects are created
+
+const objIndetex = {};
+objIndetex[2] = 'two';
+objIndetex[1] = 'one';
+objIndetex['name'] = 'Dasha';
+objIndetex[3] = 'three';
+objIndetex['age'] = 23;
+
+for (let key in objIndetex) {
+    console.log((key) + ': ' + objIndetex[key]);
+}
+
+

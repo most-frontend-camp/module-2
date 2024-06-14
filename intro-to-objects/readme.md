@@ -31,3 +31,24 @@ let player = {
 `name`, `age`, `hobbies` - свойства объекта
 `sayHello` - метод объекта
 
+const player ={
+name: 'Erling', // name - key / ключ, value - Erling
+age: 23, // age - key, value - 23
+hobbies: ['reading', 'dancing'],
+
+    sayHello: function () {
+        console.log('Hello World! ' + this.name);
+    },
+};
+
+console.log(player.name);
+console.log(player["age"]);
+console.log(player.hobbies[0]);
+// console.log(player.sayHello());
+
+player.height = 190;
+
+player.age = 33;
+console.log(player);
+delete player.hobbies;
+console.log(player);
