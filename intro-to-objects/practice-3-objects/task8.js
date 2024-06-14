@@ -4,7 +4,7 @@ function mergeInPlace(list1, ...otherLists){
 
     for (const otherList of otherLists) {
         for (const [key,value] of Object.entries(otherList)) {
-            if(!merged.hasOwnProperty(key) || merged[key] === undefined){
+            if(!merged.hasOwnProperty(key) && merged[key] === undefined){
                 merged[key] = value;
             }
         }
